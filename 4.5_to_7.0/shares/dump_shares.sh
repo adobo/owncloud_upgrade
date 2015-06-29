@@ -1,7 +1,4 @@
 #!/bin/bash
-#
-# Hay que ejecutar esto en OC4
-#
 
 mysql --default-character-set=utf8 -uowncloud7 -p owncloud7 -N -B \
     -e "SELECT f.user, MD5(REPLACE(f.path, CONCAT('/', f.user, '/files'), 'files')) AS hash,

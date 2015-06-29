@@ -31,7 +31,7 @@ while (<STORAGES>) {
     $user =~ s/^home:://;
 
     if ($user =~ /:/) {
-    # Skip this one
+        # Skip this one
         next;
     }
 
